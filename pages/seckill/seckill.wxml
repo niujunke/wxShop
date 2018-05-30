@@ -1,0 +1,71 @@
+<view style="font-size:28rpx; background:#f3f3f3;">
+  <view class="swiper-tab">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <block wx:for="{{times}}">
+          <view class="swiper-tab-list {{currentTab==index ? 'on' : ''}}" data-index="{{index}}" data-current="{{index}}"  bindtap="swichNav">
+            <text class="{{currentTab==index ? 'on' : ''}}" data-current="{{index}}" data-index="{{index}}" bindtap="swichNav">{{item.time}}:00</text>
+            {{item.status==0?'已开始':'即将开始'}}
+          </view>
+        </block>
+    </scroll-view>
+
+
+
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+    <block wx:for="{{times}}">
+      <swiper-item style="margin-top:110rpx;">
+          <view class="link">
+            <view class='left'>抢购中 先下单先得哦</view>
+            <view class="right">
+              <view class="skillt-m" id="skill_timeout">
+
+                  <view wx:if="{{item.status == 0}}">
+                  距结束
+                    <text>{{countDownHour}}</text>:
+                    <text>{{countDownMinute}}</text>:
+                    <text>{{countDownSecond}}</text>
+                  </view>
+                  <view wx:else>
+                  开始时间：{{item.time}}：00
+                  </view>
+            </view>
+            </view>
+          </view>
+      <block wx:for="{{item.timegoods}}" wx:for-item="goods" wx:key="goods">
+          <view class="li">
+            <view class="left">
+              <image src="{{goods.thumb}}" />
+            </view>
+            <view class="center">
+              <view class="top">{{goods.title}}</view>
+              <view class="mind">￥{{goods.price}}</view>
+              <view class="bot">￥{{goods.marketprice}}</view>
+            </view>
+            <view class="right">
+              <navigator url='/pages/goods/detail/index?id={{goods.goodsid}}'>{{item.status == 1 ? '等待抢购' : '去抢购'}}</navigator>
+              <view class="jindu" style='margin-top:15rpx;'>
+                <progress percent="{{goods.hasoption}}" active show-info style='width:200rpx;' />
+              </view>
+            </view>
+            <view style='clear:both;'></view>
+          </view>
+      </block>
+      </swiper-item>
+    </block>
+
+
+    <swiper-item style="margin-top:110rpx;">
+      3
+    </swiper-item>
+
+    <swiper-item style="margin-top:110rpx;">
+      4
+    </swiper-item>
+
+    <swiper-item style="margin-top:110rpx;">
+      5
+    </swiper-item>
+  </swiper>
+</view>

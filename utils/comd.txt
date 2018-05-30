@@ -1,0 +1,14 @@
+ // {
+      //   "pagePath": "pages/shop/caregory/index",
+      //   "text": "全部分类",
+      //   "iconPath": "static/images/icon/cate.png",
+      //   "selectedIconPath": "static/images/icon-red/cate.png"
+      // },
+
+      
+      // {
+      //   "pagePath": "pages/member/cart/index",
+      //   "text": "购物车",
+      //   "iconPath": "static/images/icon/cart.png",
+      //   "selectedIconPath": "static/images/icon-red/cart.png"
+      // },

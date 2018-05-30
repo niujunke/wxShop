@@ -1,0 +1,90 @@
+/* pages/merch/register/index.wxss */
+.font{
+  font-size: 28rpx;
+}
+.top image{
+  width: 100%;
+}
+.content{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 25rpx;
+}
+.content .con{
+  background: #ec9d4d;
+  padding-bottom:15rpx;
+  padding-top: 15rpx;
+  color: #fff;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.bot{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.bot .left{
+  width: 160rpx;
+  float: left;
+}
+.bot .center{
+  color: red;
+  text-align: center;
+  width: 15rpx;
+  float: left;
+}
+.bot .right{
+  padding-left: 15rpx;
+  width: 500rpx;
+  float: left;
+}
+.li{
+  border-bottom: #ececec solid 2rpx;
+  overflow: hidden;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.li1{
+  border-bottom: #ececec solid 2rpx;
+  overflow: hidden;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+textarea{
+  overflow: hidden;
+  width: 490rpx;
+  overflow-y:hidden;
+}
+.li1 .center{
+  line-height: 80rpx;
+}
+.link{
+  height: 30rpx;
+  background: #fafafa;
+}
+.title{
+  color: #999;
+  margin-top: 15rpx;
+  font-size: 26rpx;
+  border-bottom: #ececec solid 2rpx;
+}
+.li2{
+  border-bottom: none;
+}
+.anniu{
+  width: 94%;
+  margin: 0 auto;
+  background: #ff9326;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+}
+.link2{
+  height: 25rpx;
+}

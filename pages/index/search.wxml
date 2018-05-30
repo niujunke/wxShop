@@ -1,0 +1,28 @@
+<!-- <view class="fui-searchbar bar">
+    <view class="searchbar">
+      <navigator hover-class="none" class="weui-search-bar__form" url="/pages/goods/index/index?fromsearch=1">
+        <view class="search-input">
+          <view class="flex-icon-search" style="line-height:20px;">
+            <image src="{{icons.search}}" style="width:18px;height:18px;">
+            </image>
+          </view>
+          <view class="input search">输入关键字进行搜索</view>
+        </view>
+      </navigator>
+    </view>
+  </view> -->
+<view class="link" style="background: url(http://xcx.yiscio.com/addons/fy_lesson/plugin/app/static/BG1.png) repeat-x;">
+  <template data="{{title: 'scanCode'}}" />
+  <image src='/static/images/saoma.png' class="saoma" type="primary" bindtap="scanCode"></image>
+  <template/>
+  <view class="link-con">
+    <image src="/static/images/fangdajing.png"  class="fangdajing"/>
+    <navigator hover-class="none" class="weui-search-bar__form" url="/pages/goods/index/index?fromsearch=1">
+      <view class="input search sousuo">输入关键字进行搜索</view>
+    </navigator>
+    <view class="cl"></view>
+  </view>
+  <button open-type="contact" class="huihua">
+    <image src='/static/images/qipao.png' class="qipao"></image>
+  </button>
+</view>

@@ -1,0 +1,147 @@
+.swiper-tab {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+  height: 92rpx;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+}
+
+.swiper-tab text {
+  text-align: center;
+  font-size: 28rpx;
+  display: block;
+}
+
+.on text {
+  font-size: 34rpx;
+}
+
+.swiper-tab-list {
+  font-size: 22rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777;
+}
+
+.on {
+  color: #f30;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.scroll-view-item {
+  height: 300rpx;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+.link{
+  border-bottom: 1px solid #ececec;
+  height: 60rpx;
+  background: #f0f2f5;
+  color: #333;
+}
+.link .left{
+  float: left;
+  margin-left: 2%;
+}
+.link .right{
+  float: right;
+  margin-right: 2%;
+  color: #6b6b6b;
+}
+.li{
+  border-bottom: #ececec solid 2rpx;
+}
+.li .left{
+  width: 18%;
+  margin-top: 15rpx;
+  margin-left: 2%;
+  float: left;
+}
+.li .left image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+}
+.li .center .top{
+  text-align: left;
+}
+.li .center{
+  width: 50%;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  float: left;
+  text-align: left;
+  
+}
+.li .right{
+  width: 25%;
+  margin-top: 15rpx;
+  margin-right: 2%;
+  float: right;
+}
+.mind{
+  color: #f02b2b;
+  font-size: 38rpx;
+  text-align: left;
+  margin-top: 20rpx;
+}
+.bot{
+  color: #949598;
+  text-align: left;
+  text-decoration: line-through;
+}
+.right navigator{
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+  color: #fff;
+  background: #f02b2b;
+  margin-top: 25rpx;
+  border-radius: 10rpx;
+}
+.jindu{
+  height: 100rpx;
+}
+
+.skillt-m {
+  font-size: 28rpx;
+  margin-left: 24rpx;
+  color: #222;
+}
+
+.skillt-m text {
+  font-size: 24rpx;
+  background: #464553;
+  border: 1px solid #dfdfdf;
+  color: #fff;
+  border-radius: 5rpx;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 6rpx;
+  padding-right: 6rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}

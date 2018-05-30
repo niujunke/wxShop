@@ -1,0 +1,68 @@
+<view  class="font">
+  <view class="top">
+    <image src='/static/images/regbg.png' mode="widthFix" />
+  </view>
+  <view class="content">
+    <view class="con">
+      <view>感谢您的入驻</view>
+      提交成功后我们会很快审核，请耐心等待结果！
+    </view>
+    <view class="bot">
+      <view class='li'>
+        <view class="left">商户名称</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="商户名称" type='text'></input>
+        </view>
+      </view>
+      <view class='li'>
+        <view class="left">主营项目</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="例如鞋帽，化妆品等" type='text'></input>
+        </view>
+      </view>
+      <view class='li1'>
+        <view class="left li2">简单介绍</view>
+        <view class="center">*</view>
+        <view class="right">
+          <textarea placeholder="简单介绍下商户" style="height: 3em" maxlength="500" />
+        </view>
+      </view>
+      <view class="link"></view>
+      <view class='li'>
+        <view class="left">联系人</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="您的称呼" type='text'></input>
+        </view>
+      </view>
+      <view class='li li2'>
+        <view class="left">手机号</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="您的手机号" type='text'></input>
+        </view>
+      </view>
+      <view class="title">请仔细填写联系方式，保证我们能尽快联系到您~</view>
+      <view class="link"></view>
+      <view class='li'>
+        <view class="left">账号</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="账号" type='text'></input>
+        </view>
+      </view>
+      <view class='li li2'>
+        <view class="left">密码</view>
+        <view class="center">*</view>
+        <view class="right">
+          <input placeholder="密码" type='text'></input>
+        </view>
+      </view>
+      <view class="title">请仔细填写联系方式，保证我们能尽快联系到您~</view>
+    </view>
+  </view>
+  <button class="anniu">提交申请</button>
+  <view class="link2"></view>
+</view>

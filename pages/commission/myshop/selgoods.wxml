@@ -1,0 +1,33 @@
+<view style="font-size:28rpx;">
+  <view class="container">
+    <view class="nav_left">
+      <block wx:for="{{content2}}">
+        <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+      </block>
+    </view>
+    <view class="nav_right">
+      <view class="sousuo">
+        <image src='/static/images/fangdajing.png'></image>
+        <input></input>
+      </view>
+      <view style='border-top:#ccc solid 2rpx; width:95%; margin-top:30rpx;'>
+      <block wx:for="{{goods}}">
+        <view class="nav_right_items">
+            <view class="left">
+              <image src="{{item.thumb}}"></image>
+            </view>
+            <view class="right">
+            <view class="right001">
+              <text>{{item.title}}</text>
+              <view class="jiage">￥{{item.marketprice}}</view>
+            </view>
+              <switch data-gid="{{item.id}}" bindchange="switch2Change" checked="{{item.checked}}" />
+            <view style='clear:both;'></view>
+            </view>
+            <view style='clear:both;'></view>
+        </view>
+      </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,127 @@
+/* pages/groups/fight/index.wxss */
+.cl {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.content1 {
+  padding-top: 35rpx;
+  position: relative;
+  height: 176rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.content1 .left{
+  width: 20%;
+}
+.content1 .left image {
+  width: 140rpx;
+  height: 140rpx;
+}
+.content1 .xiugai{
+  width: 80%;
+}
+
+.content1 .center {
+  margin-left: 20rpx;
+}
+
+.content1 .center .con1 {
+  font-size: 30rpx;
+  text-align: left;
+  font-weight: bold;
+}
+.content1 .center .con2 {
+  text-align: left;
+  font-size: 24rpx;
+}
+
+.content1 .center .con2 text {
+  color: #fd5454;
+  font-weight: bold;
+}
+
+.content1 .right {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.content1 .right text {
+  color: #000;
+  font-weight: bold;
+}
+.content1 .lala{
+  width: 100%;
+}
+.content1 .lala .con2{
+  width: 60%;
+}
+.content1 .lala .right{
+  width: 40%;
+}
+.lala{
+  margin-top: 35rpx;
+}
+.content2{
+  width: 100%;
+}
+.content2 .title{
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #45535d;
+  display: block;
+  margin-left: 20rpx;
+}
+.content2 .con{
+  background: #ffedf1;
+  padding-top: 15rpx;
+  padding-bottom: 25rpx;
+}
+.content2 .li{
+  height: 84rpx;
+  width: 92%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 50rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.content2 .li .left image{
+  width: 84rpx;
+  height: 84rpx;
+}
+.content2 .li .center{
+  text-align: left;
+  margin-left: 20rpx;
+}
+.content2 .li .center .con1{
+  font-size: 26rpx;
+  text-align: left;
+  color: #000;
+  margin-top: 8rpx;
+}
+.content2 .li .center .con2{
+  color: #ad9898;
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+.content2 .li .right .con1{
+  font-size: 26rpx;
+  line-height: 84rpx;
+}
+.content2 .li .right .con2{
+  margin-left: 20rpx;
+  padding: 0rpx 20rpx 0rpx 20rpx;
+  line-height: 84rpx;
+  display: block;
+  color: #fff;
+  background: red;
+  font-size: 26rpx;
+}

@@ -1,0 +1,142 @@
+.cl {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.swiper-item {
+  display: block;
+  width: 750rpx;
+  height: 365rpx;
+}
+
+.content1 .con1 {
+  width: 95%;
+  margin-left: 2.5%;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.content1 .con1 .left {
+  padding: 3rpx 8rpx 3rpx 8rpx;
+  background: #fd5454;
+  border-radius: 8rpx;
+  color: #fff;
+}
+
+.content1 .con1 .right {
+  font-weight: bold;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+
+.content1 .con2 {
+  width: 95%;
+  margin-left: 2.5%;
+  color: #999;
+}
+
+.content1 .con3 {
+  width: 95%;
+  margin-left: 2.5%;
+  color: #999;
+  font-size: 24rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.content1 .con3 .one {
+  color: #fd5454;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.content1 .con3 .tow {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.content1 .con3 .right text {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #000;
+}
+
+.content1 .con4 {
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 5rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.content1 .con4 navigator {
+  text-decoration: underline;
+  color: #000;
+  display: inline;
+}
+.content2{
+  width: 95%;
+  margin-left: 2.5%;
+}
+.content2 .con1{
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  border-bottom: #fd5454 solid 2rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.content2 .con2{
+  margin-top: 20rpx;
+}
+.content3{
+  position: fixed;
+  bottom: 0;
+  z-index: 999;  
+  height: 100rpx;
+  width: 100%;
+}
+.content3 .left{
+  height: 100rpx;
+  width: 20%;
+  text-align: center;
+  padding-top:25rpx;
+}
+.content3 .left image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.content3 .center{
+  font-size: 26rpx;
+  height: 100rpx;
+  width: 40%;
+  background: #ff8080;
+  line-height: 40rpx;
+  text-align: center;
+  color: #fff;
+}
+.content3 .one{
+  margin-top: 10rpx;
+  font-size: 32rpx;
+}
+.content3 .right{
+  height: 100rpx;
+  background:#fd5454;
+  font-size: 26rpx;
+  width: 40%;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  
+}

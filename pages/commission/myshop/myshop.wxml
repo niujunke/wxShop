@@ -1,0 +1,83 @@
+<view style="font-size:28rpx;">
+  <view class="header" style='text-align:center'>
+    <image src='{{shop.img}}' style='width:100%; height:400rpx;'></image>
+  </view>
+  <view class="content6">
+    <view class="left">
+      <image src='{{shop.logo}}' style='border:1px solid #eee; box-shadow:0.5px 0.5px 10px rgba(0,0,0,0.2);' />
+    </view>
+    <view class="right">
+      <view class="title">{{shop.name}}</view>
+      <view class="con">
+        <view class="con1">
+          <navigator url='/pages/goods/index/index'>
+            <view class="top">{{shop.goodscount}}</view>
+            <view class="bot">全部商品</view>
+          </navigator>
+        </view>
+        <view class="con1">
+          <navigator>
+            <view class="top"><image src='/static/images/shoucang.png' style='width:50rpx; height:50rpx;'></image></view>
+            <view class="bot">收藏本店</view>
+          </navigator>
+        </view>
+        <view class="con1">
+          <navigator>
+            <view class="top"><image src='/static/images/fener.png' style='width:45rpx; height:45rpx;'></image></view>
+            <view class="bot">二维码</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view style='clear:both;'></view>
+  </view>
+  <view class="sousuo">
+  <input class="search" placeholder="输入关键字..."/>
+  </view>
+  <view class="content1">
+    <view class="link2">为您推荐</view>
+    <view style='margin-left: 8rpx;'>
+      <block wx:for="{{indexrecommands}}" wx:key='indexrecommands'>
+
+        <view class="con">
+          <navigator url="/pages/goods/detail/index?id={{item.id}}" class="con-a">
+            <image src="{{item.thumb}}" class="con-img" />
+            <view class="con-text">{{item.title}}</view>
+          </navigator>
+          <view class="bot">
+            <view class="price">
+              ￥{{item.marketprice}}
+            </view>
+            <image bindtap="showModal" bindload="imageLoad" data-id="{{item.id}}" style="width:50rpx;height:50rpx;" src="/static/images/gouwu.png" data-index="{{index}}" />
+          </view>
+          <view style="clear:both;"></view>
+        </view>
+
+      </block>
+    </view>
+    <view style='clear:both;'></view>
+  </view>
+  <view class="content1">
+    <view class="link2">店铺推荐</view>
+    <view style='margin-left: 8rpx;'>
+      <block wx:for="{{shopgoods}}" wx:key='content4'>
+
+        <view class="con">
+          <navigator url="/pages/goods/detail/index?id={{item.id}}" class="con-a">
+            <image src="{{item.thumb}}" class="con-img" />
+            <view class="con-text">{{item.title}}</view>
+          </navigator>
+          <view class="bot">
+            <view class="price">
+              ￥{{item.marketprice}}
+            </view>
+            <image data-id="{{item.id}}" style="width:50rpx;height:50rpx;" src="/static/images/gouwu.png" data-index="{{index}}" />
+          </view>
+          <view style="clear:both;"></view>
+        </view>
+
+      </block>
+    </view>
+  </view>
+
+</view>

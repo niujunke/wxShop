@@ -1,0 +1,82 @@
+<loading hidden="{{show}}">正在加载</loading>
+<view class="page" wx:if="{{!success && show}}">
+  <view class="fui-cell-group">
+    <view class="fui-cell">
+      <view class="fui-cell-text textl">订单编号</view>
+      <view class="fui-cell-remark noremark">{{list.order.orderno}}</view>
+    </view>
+    <view class="fui-cell">
+      <view class="fui-cell-text textl">订单金额</view>
+      <view class="text-danger">￥
+        <text>{{list.order.price}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="fui-list-group">
+    <view class="fui-list" bindtap="pay" data-type="credit" wx:if="{{list.credit.success && list.order.price == 0}}">
+      <view class="fui-list-media credit radius">
+        <image class="round" src="/static/images/icon-white/money.png"></image>
+      </view>
+      <view class="fui-list-inner">
+        <view class="row">
+          <view class="row-text">确认支付</view>
+        </view>
+      </view>
+      <view class="angle"></view>
+    </view>
+    <view class="fui-list" bindtap="pay" data-type="wechat" wx:if="{{list.wechat.success && list.order.price != 0}}">
+      <view class="fui-list-media wechat">
+        <image class="round" src="/static/images/icon-white/wechat.png"></image>
+      </view>
+      <view class="fui-list-inner">
+        <view class="row">
+          <view class="row-text">微信支付</view>
+        </view>
+        <view class="subtitle">微信安全支付</view>
+      </view>
+      <view class="angle"></view>
+    </view>
+    <view class="fui-list" bindtap="pay" data-type="credit" wx:if="{{list.credit.success && list.order.price != 0}}">
+      <view class="fui-list-media credit radius">
+        <image class="round" src="/static/images/icon-white/money.png"></image>
+      </view>
+      <view class="fui-list-inner">
+        <view class="row">
+          <view class="row-text">余额支付</view>
+        </view>
+        <view class="subtitle">
+          <text>当前余额</text>
+          <text class="text-danger">
+            <text>￥{{list.credit.current}}</text>
+          </text>
+        </view>
+      </view>
+      <view class="angle"></view>
+    </view>
+    <view class="fui-list" bindtap="pay" data-type="cash" wx:if="{{list.cash.success && list.order.price != 0}}">
+      <view class="fui-list-media car radius">
+        <image class="round" src="/static/images/icon-white/car.png"></image>
+      </view>
+      <view class="fui-list-inner">
+        <view class="row">
+          <view class="row-text">货到付款</view>
+        </view>
+        <view class="subtitle">收到商品后进行付款</view>
+      </view>
+      <view class="angle"></view>
+    </view>
+  </view>
+  <view class="fui-toast {{FoxUIToast.show ? 'in' : 'out'}}">
+    <view class="text">{{FoxUIToast.text}}</view>
+  </view>
+</view>
+<view class="page" wx:if="{{success}}">
+  <view class="operate">
+    <navigator open-type="redirect" class="btn btn-default" url="/pages/order/detail/index?id={{successData.order.id}}">
+      订单详情
+    </navigator>
+    <navigator open-type="switchTab" url="/pages/groups/index" class="btn btn-default">
+      返回首页
+    </navigator>
+  </view>
+</view>

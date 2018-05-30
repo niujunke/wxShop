@@ -1,0 +1,49 @@
+<!--pages/groupsop/groupsop.wxml-->
+<view style='font-size:28rpx;'>
+  <view class="content1">
+    <view class="left fl">
+      <image src="{{goodsdata.thumb ? goodsdata.thumb : '/static/images/football.png'}}"></image>
+    </view>
+    <view class='xiugai fl'>
+      <view class="center">
+        <view class="con1">{{goodsdata.title}}</view>
+        <view class="lala">
+          <view class="con2 fl">{{goodsdata.groupnum}}人团:￥
+            <text>{{goodsdata.groupsprice}}</text>/{{goodsdata.units ? goodsdata.goodsnum+goodsdata.units : '1件'}}
+          </view>
+          <view class='right fr'>已有
+            <text>{{goodsdata.fightnum}}</text>人参团
+          </view>
+          <view class="cl"></view>
+        </view>
+      </view>
+      <view style='clear:both;'></view>
+    </view>
+  </view>
+  <view style='height:15rpx; background:#eeeeee; width:100%;'></view>
+  <view class="content2">
+    <text class="title">以下小伙伴正在发起拼团，您可以直接参加</text>
+    <view class="con">
+
+        <block wx:for="{{teams}}" wx:key='index'>
+              <view class="li">
+                <view class="left fl">
+                  <image src="{{item.avatar ? item.avatar : '/static/images/football.png'}}"></image>
+                </view>
+                <view class="center fl">
+                  <view class="con1">{{item.nickname ? item.nickname : '匿名'}}</view>
+                  <view class="con2">剩余：{{item.hour}}:{{item.minite}}:{{item.second}}</view>
+                </view>
+                <view class="right fr">
+                  <view class="con1 fl">还差
+                    <text>{{item.num}}</text>人成团</view>
+                  <view class="con2 fr" data-teamid="{{item.teamid}}" data-id="{{item.goodid}}" bindtap="toCanGroups" >去参团</view>
+                  <view class="cl"></view>
+                </view>
+              </view>
+        </block>
+
+
+    </view>
+  </view>
+</view>

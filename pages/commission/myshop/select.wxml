@@ -1,0 +1,42 @@
+<view style="font-size:28rpx;">
+  <view class="con1">
+    <view class="left">
+      <view class="text1">开启自选</view>
+      <view class="text2">开启自选后，您的小店里只显示您选择的产品</view>
+    </view>
+    <view class="right">
+      
+      <switch checked="{{switch1Checked}}" bindchange="switch2Change"/>
+    </view>
+  </view>
+  <view class="bright789_view_hide{{showView?'bright789_view_show':''}}">
+    <view class="con2">
+      <view class="left">
+        <view class="text1">开启分类</view>
+        <view class="text2">如果您选择的商品较多，建议您开启与总店同步分类</view>
+      </view>
+      <view class="right">
+        
+        <switch checked="{{switch2Checked}}" bindchange="switch2Change1"/>
+      </view>
+    </view>
+    <view class="con3">
+      <view class="text5">选择商品</view>
+      <button bindtap="toselgoogds" >+ 选择</button>
+    </view>
+
+    <block wx:for="{{shopgoods}}" wx:key='content4'>
+    <view class="con4">
+        <image src='{{item.thumb}}'></image>
+        <view class="right">
+          <view class="text4">{{item.title}}</view>
+          <view class="text3">￥{{item.marketprice}}</view>
+        </view>
+        <button id="{{item.id}}" bindtap="delshopgoods">删除</button>
+        <view style='clear:both;'></view>
+    </view>
+    </block>
+
+  </view>
+  <button bindtap="submit" class="tijiao" hover-class="other-button-hover">保存设置</button>
+</view>

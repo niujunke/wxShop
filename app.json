@@ -1,0 +1,108 @@
+{
+  "pages": [  
+    "pages/index/index",
+    "pages/order/detail/pages/order/index",
+    "pages/ceshi/ceshi",
+    "pages/merch/index",
+    "pages/merch/register/index",
+    "pages/ceshi1/ceshi1",
+    "pages/transfer/Mytransfer/index", 
+    "pages/groups/index",
+    "pages/groups/orders/index",
+    "pages/seckill/seckill",
+    "pages/commission/index",
+    "pages/commission/log/index",
+    "pages/commission/log/detail",
+    "pages/commission/down/index",
+    "pages/commission/qrcode/index",
+    "pages/commission/apply/index",
+    "pages/commission/withdraw/index",
+    "pages/commission/order/index",
+
+    "pages/commission/myshop/shopset",
+    "pages/commission/myshop/myshop",
+    "pages/commission/myshop/select",
+    "pages/commission/myshop/selgoods",
+
+    "pages/groups/goods/openGroups",
+    "pages/groups/category/index",
+    "pages/groups/pay/index",
+    "pages/groups/goods/index",
+    "pages/groups/orders/confirm",
+    "pages/groups/team/index",
+    "pages/groups/detail/index",
+    "pages/groups/fightgroups/index",
+
+
+    
+
+    "pages/commission/register/index",
+    "pages/shop/notice/index/index",
+    "pages/shop/notice/detail/detail",
+    "pages/shop/caregory/index",
+    "pages/goods/index/index",
+    "pages/goods/region/index",
+    "pages/goods/detail/index",
+    "pages/order/index",
+    "pages/order/detail/index",
+    "pages/order/express/index",
+    "pages/order/comment/index",
+    "pages/order/refund/index",
+    "pages/order/create/index",
+    "pages/order/store/index",
+    "pages/order/store/map",
+    "pages/order/pay/index",
+    "pages/member/index/index",
+    "pages/member/info/index",
+    "pages/member/bind/index",
+    "pages/member/favorite/index",
+    "pages/member/history/index",
+    "pages/member/recharge/index",
+    "pages/member/withdraw/index",
+    "pages/member/log/index",
+    "pages/member/address/index",
+    "pages/member/address/post",
+    "pages/member/address/select",
+    "pages/member/cart/index",
+    "pages/sale/coupon/index/index",
+    "pages/sale/coupon/detail/index",
+    "pages/sale/coupon/my/detail/index",
+    "pages/sale/coupon/my/index/index",
+    "pages/sale/coupon/my/showcoupons2/index",
+    "pages/public/coupon/index",
+    "pages/message/auth/index"
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff0011",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/icon/home.png",
+        "selectedIconPath": "static/images/icon-red/home.png"
+      },
+     
+      {
+        "pagePath": "pages/transfer/Mytransfer/index",
+        "text": "转让",
+        "iconPath": "static/images/icon/tran.png",
+        "selectedIconPath": "static/images/icon-red/tran.png"
+      },
+      {
+        "pagePath": "pages/member/index/index",
+        "text": "会员中心",
+        "iconPath": "static/images/icon/people.png",
+        "selectedIconPath": "static/images/icon-red/people.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#fafafa",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0290c0",
+    "navigationBarTitleText": "加载中...",
+    "navigationBarTextStyle": "white"
+  },
+  "debug":false
+}

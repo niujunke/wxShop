@@ -1,0 +1,41 @@
+<view style="font-size:28rpx;">
+  <view class="header">
+    <view style='background:#fff; width:85%; margin-left:3%; border-radius:15rpx; float:left;'>
+      <view class="left">
+        <image src="/images/fangdajing.png" />
+      </view>
+      <input placeholder="输入关键字..." class='fl'></input>
+      <view class="cl"></view>
+    </view>
+    <navigator class='sousuo fl'>搜索</navigator>
+    <view class="cl"></view>
+  </view>
+  <view class="content1">
+    <view class="product">
+      <block wx:for="{{product}}">
+        <navigator url='../goods/index?id={{item.id}}' style='width:100%; border-bottom:15rpx solid #eee;'>
+          <view class="li">
+            <image src='{{item.thumb}}' class="left fl"></image>
+            <view class="right fl">
+              <view class="name">{{item.title}}</view>
+              <text class="name2">{{item.description}}</text>
+              <view class="oldprice">原价：￥{{item.price}}</view>
+              <view class="bot">
+                <view class="photo fl">
+                  <image src='/static/images/pintuan.png'></image>
+                </view>
+                <view class="con fl">{{item.groupnum}}人团 ￥
+                  <text>{{item.groupsprice}}</text>/{{item.units}}件
+                </view>
+                <navigator>去拼团></navigator>
+              </view>
+            </view>
+            <view class='cl'></view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+  <import src="/template/tabBar.wxml" />
+  <template is="tabBar" data="{{tabBar: tabBar}}" />
+</view>

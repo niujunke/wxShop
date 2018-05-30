@@ -1,0 +1,21 @@
+<view class="index-advs">
+    <swiper autoplay="{{autoplay}}" circular="{{circular}}" class="index-adcs-sqiper" duration="{{duration}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" style="{{advsheight ? 'height:' + advsheight + 'px' : ''}}">
+      <block wx:for="{{background}}" wx:for-index="idx">
+        <swiper-item>
+          <navigator class="index-advs-navigator" url="{{item.link}}">
+            <image mode="widthFix" src="{{item.images}}" bindload="imagesHeight" class="advimg" data-type="advsheight">
+            </image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+<import src="/template/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar: tabBar}}" />
+<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+<view id="outer" bind:touchstart="handleTap1" capture-bind:touchstart="handleTap2">
+  outer view
+  <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+    inner view
+  </view>
+</view>

@@ -1,0 +1,111 @@
+page{
+  border-top: #c6c6c6 solid 1rpx;
+  background: #fff;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #939393;
+}
+.nav_left{
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 25%;
+  background: #f2f2f2;
+  text-align: center;
+}
+.nav_left .nav_left_items{
+  height: 30px;
+  line-height: 30px;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #666;
+}
+.nav_left .nav_left_items.active{
+  color: red;
+  border-left: red solid 4rpx;
+  background: #fff;
+}
+.nav_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex: 1;
+  width: 75%;
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.nav_right .nav_right_items{
+  border-bottom: #ccc solid 2rpx;
+  background: #fff;
+  float: left;
+  width: 95%;
+  position: relative;
+}
+.nav_right .nav_right_items image{
+  margin-left: 15rpx;
+  display: block;
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+}
+.nav_right .nav_right_items text{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.nav_right_items .left{
+  width: 25%;
+  float: left;
+}
+.right{
+  float: left;
+  width: 75%;
+}
+.right text{
+  margin-top: 15rpx;
+  color: #000;
+   font-size: 26rpx;
+  display: block;
+}
+.right .jiage{
+  color: red;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.right switch{
+  float: right;
+}
+.sousuo{
+  margin-bottom: 20rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  width: 90%;
+  margin-left: 15rpx;
+  height: 50rpx;
+  border:#999 solid 2rpx;
+  border-radius: 15rpx;
+}
+.sousuo image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin-top: 5rpx;
+  margin-left: 15rpx;
+  float: left;
+}
+.sousuo input{
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+}
+.right001{
+  float: left;
+}

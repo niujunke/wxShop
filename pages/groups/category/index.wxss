@@ -1,0 +1,144 @@
+/* pages/groups/groups.wxss */
+.cl{
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.header{
+  padding-bottom: 18rpx;
+  background: rgba(0, 0, 0, 0.1);
+  padding-top: 18rpx;
+}
+.header .left{
+  width: 12%;
+  float: left;
+}
+.header image{
+    width: 45rpx;
+    height: 45rpx;
+    display: block;
+    margin-top: 8rpx;
+    margin-left:15rpx;
+}
+.header input{
+  height: 58rpx;
+  line-height: 58rpx;
+  width: 88%;
+}
+.sousuo{
+  color: #5f646e;
+  line-height: 58rpx;
+  margin-left: 15rpx;
+}
+.content1 .product .li{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  width: 94%;
+  margin-left: 3%;
+}
+.content1 .product .left{
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+.content1 .product .right{
+  width: 72%;
+  margin-left: 28rpx;
+}
+.content1 .product .right image{
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  margin-left: 5rpx;
+  margin-top: 5rpx;
+}
+.content1 .product .bot{
+  overflow: hidden;
+  border-radius: 40rpx;
+  height: 58rpx;
+  background: #ff8080;
+  width: 100%;
+}
+.content1 .product .bot .photo{
+  width: 46rpx;
+  height: 46rpx;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: 6rpx;
+  margin-left: 6rpx;
+}
+.content1 .product .bot view{
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 56rpx;
+}
+.content1 .product .bot text{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.content1 .product .bot navigator{
+  display: block;
+  line-height: 56rpx;
+  float: right;
+  color: #fff;
+  width: 100rpx;
+  background: #ff473f;
+  font-size: 24rpx;
+  text-align: center;
+}
+.content1 .product .bot .con{
+  margin-left: 10rpx;
+}
+.name{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.name2{
+  font-size: 24rpx;
+  color: #959595;
+}
+.oldprice{
+  color: #ff8080;
+  font-size: 24rpx;
+  margin-top: 25rpx;
+  margin-bottom: 10rpx;
+  text-decoration: line-through;
+}
+
+.menu-item {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  float: left;
+  text-align: center;
+}
+
+.menu-item text {
+  display: block;
+}
+
+.flex-h {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.number25 {
+  width: 25%;
+}
+
+.number33 {
+  width: 33%;
+}
+
+.number50 {
+  width: 50%;
+}
+
+.number100 {
+  width: 100%;
+}
+

@@ -1,0 +1,178 @@
+.cl {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.content1 {
+  position: relative;
+  height: 176rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.content1 .left{
+  width: 24%;
+}
+.content1 .left image {
+  width: 160rpx;
+  height: 160rpx;
+}
+.content1 .xiugai{
+  width: 70%;
+}
+
+.content1 .center {
+  margin-left: 20rpx;
+}
+
+.content1 .center .con1 {
+  font-size: 30rpx;
+  text-align: left;
+  font-weight: bold;
+}
+.content1 .center .con2 {
+  text-align: left;
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 160rpx;
+}
+
+.content1 .center .con2 text {
+  color: #fd5454;
+  font-weight: bold;
+}
+
+.content1 .right {
+  color: #999;
+  font-size: 24rpx;
+  position: absolute;
+  right: 15rpx;
+  bottom: 0;
+}
+
+.content1 .right text {
+  color: #000;
+  font-weight: bold;
+}
+
+.content2 {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 25rpx;
+}
+
+.content2 .con1 {
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.content2 .con1 text {
+  color: #fd5454;
+}
+
+.content2 .con2{
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.content2 .con2 .fl {
+  width: 46%;
+  border-radius: 10rpx;
+  border: 1px solid #909090;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.content2 .con2 .fr {
+  width: 46%;
+  border-radius: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fd5454;
+  color: #fff;
+  text-align: center;
+}
+.content3{
+  padding-top: 25rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.content3 .con1{
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.content3 .con1 .right{
+  color: #999;
+  font-size: 24rpx;
+}
+.content3 .con2{
+  margin-top: 25rpx;
+  height: 64rpx;
+}
+.content3 .con2 .left{
+  margin-left:25rpx;
+  line-height: 64rpx;
+}
+.content3 .con2 .right{
+  font-size: 24rpx;
+  margin-left: 36rpx;
+}
+.content4 {
+  margin-top: 25rpx;
+}
+
+.content4 .link2 {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f4f4f4;
+  color: #ef4f4f;
+  text-align: center;
+}
+
+.content4 .con {
+  border: #f4f4f4 solid 10rpx;
+  border-top: none;
+  float: left;
+  margin-bottom: 10rpx;
+  width: 350rpx;
+}
+
+.content4 .con .con-text {
+  display: block;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+
+.content4 .con .con-img {
+  padding: 15rpx 0rpx 0rpx 0rpx;
+  width: 310rpx;
+  height: 310rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.content4 .con .bot {
+  margin-left: 25rpx;
+  color: #ed2822;
+  margin-top: 60rpx;
+}
+
+.content4 .con .bot .price {
+  float: left;
+  line-height: 50rpx;
+}
+
+.content4 .con .bot image {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  float: right;
+  margin-right: 15rpx;
+}

@@ -1,0 +1,48 @@
+<!-- <loading hidden="{{show}}">正在加载</loading> -->
+<import src="/utils/wxParse/wxParse.wxml" />
+<view class="page" wx:if="{{true}}">
+  <view class="fui-cell-group fui-cell-group-o">
+    <view class="fui-cell-title">
+      <view class="fui-cell-info gray f12" style="color:#999">转让须知: 
+        <view  class=""><template is="wxParse" data="{{wxParseData:article.nodes}}" /></view>
+      </view>
+    </view>
+   <view class="fui-cell">
+      <view class="fui-cell-label"><span class="re-g">选择分类</span></view>
+      <picker class="fui-cell-info" rangeKey="name"  bindchange="transferChange" range="{{array}}" value="{{index}}" 
+      >
+         {{array[index].name?array[index].name:array[0].name}}
+      </picker>
+
+      <view class="fui-cell-remark" wx:if="{{info.type_array.length > 1}}"></view>
+    </view>
+    <view class="fui-cell">
+      <view class="fui-cell-label"><span class="re-g">选择商品</span></view>
+       <picker class="fui-cell-info" rangeKey="title"  bindchange="goodsChange" range="{{goods}}" value="{{goodindex}}">
+          {{goods[goodindex].title?goods[goodindex].title:goods[0].title}}
+      </picker> 
+      <view class="fui-cell-remark" wx:if="{{info.type_array.length > 1}}"></view>
+    </view>
+    <view class="fui-cell">
+      <view class="fui-cell-label " >回收价格</view>
+      <view class="fui-cell-info">
+        <text>{{costprice}}</text>
+        <!-- <input value="{{costprice}}" bindinput="onChange" class="fui-input money" type="digit" data-type="price" /> -->
+      </view>
+    </view>
+    <view class="fui-cell">
+      <view class="fui-cell-label " >服务密码</view>
+      <view class="fui-cell-info">
+        <input value="{{money}}" bindinput="onChange" class="fui-input money" type="text" placeholder='填写对应的服务码/消费密码' data-type="password" />
+      </view>
+    </view>
+    <view class="fui-cell ">
+     
+      <view class="fui-cell-label " >个人留言</view>
+      <view class="fui-cell-info">
+        <textarea bindinput="onChange" auto-height data-type="leave_message" />
+      </view>
+    </view>
+  </view>
+  <view bindtap="submit" class=" btn btn-danger block ">确定转让</view>
+</view>

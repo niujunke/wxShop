@@ -1,0 +1,248 @@
+/*top tab*/
+.juzhong{
+  display: block;width: 100%;
+  text-align: center;
+}
+.swiper-tab {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 148rpx;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.title {
+  height: 300rpx;
+}
+
+.title .left {
+  float: left;
+}
+
+.title .right {
+  float: right;
+}
+
+.title image {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+}
+
+.li {
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.li .top {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.li .top .left {
+  display: block;
+  float: left;
+  margin-left: 15rpx;
+}
+
+.li .top .right {
+  display: block;
+  float: right;
+  margin-right: 15rpx;
+  color: #ef4f4f;
+}
+
+.li .mind {
+  padding-top: 20rpx;
+  text-align: left;
+}
+
+.li .mind .dianpu {
+  width: 33rpx;
+  height: 30rpx;
+  display: block;
+  margin-left: 15rpx;
+  margin-right: 10rpx;
+  float: left;
+}
+
+.li .mind .dianpu2 {
+  display: block;
+  margin-left: 15rpx;
+  float: block;
+}
+
+.li .mind .con {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 30rpx;
+}
+
+.li .mind .con image {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  float: left;
+}
+
+.li .mind .con .center {
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.li .mind .con .right {
+  margin-top: 15rpx;
+  float: right;
+}
+
+.li .mind .con .right text {
+  display: block;
+  text-align: right;
+}
+
+.li .bot {
+  margin-top: 20rpx;
+  padding-right: 15rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: right;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.li .bot text {
+  color: #f00;
+}
+
+.pay {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.pay navigator {
+  display: block;
+  text-align: center;
+  float: right;
+}
+
+.pay .right {
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+  background: #f00;
+  color: #fff;
+  border-radius: 10%;
+  height: 45rpx;
+  line-height: 45rpx;
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.pay .left {
+  border: #999 solid 2rpx;
+  color: #999;
+  border-radius: 10%;
+  height: 41rpx;
+  line-height: 41rpx;
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.ol image {
+  margin-top: 100rpx;
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+}
+
+.ol text {
+  margin-top: 30rpx;
+  display: block;
+  color: #999;
+}
+
+.ol navigator {
+  display: block;
+  border: #000 solid 2rpx;
+  color: #515151;
+  border-radius: 10%;
+  height: 61rpx;
+  line-height: 61rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: 140rpx;
+  margin: 0 auto;
+  margin-top: 18rpx;
+}
+
+span {
+  color: #ef4f4f;
+  font-size: 30rpx;
+}
+
+.menu-item {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  float: left;
+  text-align: center;
+}
+
+.menu-item text {
+  display: block;
+}
+
+.flex-h {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.number25 {
+  width: 25%;
+}
+
+.number33 {
+  width: 33%;
+}
+
+.number50 {
+  width: 50%;
+}
+
+.number100 {
+  width: 100%;
+}
+

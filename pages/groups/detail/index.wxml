@@ -1,0 +1,117 @@
+<!--pages/groups/detail/index.wxml-->
+<view style="font-size:28rpx;">
+  <view class="index-advs">
+    <swiper autoplay="{{autoplay}}" circular="{{circular}}" class="index-adcs-sqiper" duration="{{duration}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" style="{{advsheight ? 'height:' + advsheight + 'px' : ''}}">
+      <block wx:for="{{background}}" wx:for-index="idx">
+        <swiper-item>
+          <navigator class="index-advs-navigator" url="{{item.link}}">
+            <image mode="widthFix" src="{{item}}" bindload="imagesHeight" data-index="{{index}}" class="advimg" data-type="advsheight">
+            </image>
+          </navigator>
+        </swiper-item>
+      </block>
+      <view class="content">
+        <view class="con">
+          <view>组团</view>
+          成功
+        </view>
+      </view>
+    </swiper>
+  </view>
+
+  <view class="content1">
+    <view class="title">{{goods.title}}</view>
+    <view class="link">拼团价：¥
+      <text>{{goods.groupsprice}}</text>/{{goods.goodsnum}}件
+      <span>{{goods.price}}</span>
+    </view>
+    <view class="con1">
+      <block wx:for="{{detail}}">
+        <view class="li">
+          <image src='{{item.avatar}}'></image>
+        <view class="tubiao">
+        <view class="hehe1" wx:if="{{index==0}}"><text>团</text>长</view>
+        <view class="hehe1" wx:if="{{index==1}}"><text>沙</text>发</view>
+        </view>
+        </view>
+        
+  
+      </block>
+      <view style='clear:both;'></view>
+    </view>
+
+  </view>
+  <view class="bot">团购已结束</view>
+  <view style='background:#fafafa; height:15rpx;'></view>
+  <view class="content2">
+
+    <view class="body">
+      <view class="nav bc_white">
+        <view class="{{selected?'red':'default'}}" bindtap="selected">拼团详情</view>
+        <view class="{{selected1?'red':'default'}}" bindtap="selected1">商品详情</view>
+      </view>
+      <view class="{{selected?'show':'hidden'}}">
+        <view class="conn">
+          <block wx:for="{{detail}}">
+            <view class="li">
+              <view class="left">
+                <image src="{{item.avatar}}" />
+              </view>
+              <view class="center">{{item.nickname}}</view>
+              <view class="right">{{item.paytime}} {{item.heads==1 ? '开团' : '参团'}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class="{{selected1?'show':'hidden'}}">
+        <view class="li1">
+          <view class='aa'>
+            暂无商品详情
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+  <view class="content3">
+    <view class="con1">
+      <view class="left fl">拼团玩法</view>
+      <navigator class="right fr">查看详情></navigator>
+    </view>
+    <view class="con2">
+      <view class="left fl">1</view>
+      <view class="right fl">
+        <view>选择</view>
+        <view>心仪商品</view>
+      </view>
+      <view class="left fl">2</view>
+      <view class="right fl">
+        <view>支付开团</view>
+        <view>或参团</view>
+      </view>
+      <view class="left fl">3</view>
+      <view class="right fl">
+        <view>邀请好友</view>
+        <view>参团支付</view>
+      </view>
+      <view class="left fl">4</view>
+      <view class="right fl">
+        <view>达到人数</view>
+        <view>团购成功</view>
+      </view>
+      <view class="cl"></view>
+    </view>
+  </view>
+  <view style='height:120rpx;'></view>
+  <view class="foot">
+    <view class="left hehe">团购已成功</view>
+    <view class="right hehe">
+    <navigator url="../index">
+      <image src='/static/images/shouyebb.png' />
+      <view>首页</view>
+      </navigator>
+    </view>
+    <view class="cl"></view>
+  </view>
+</view>
